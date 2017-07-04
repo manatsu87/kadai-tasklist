@@ -11,6 +11,6 @@
             
             {!!Form::submit('投稿')!!}
         
-        {Form::close() !!}    
+         {!! Form::close() !!}  
 
 @endsection
