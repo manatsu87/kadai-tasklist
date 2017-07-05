@@ -4,7 +4,8 @@
 
 <!-- ここにページ毎のコンテンツを書く -->
 <h1>{{$task->id}}のメッセージ詳細ページ</h1>
-<p>{{$task->task}}</p>
+<p>状態: {{ $task->status }}</p>
+<p>{{$task->content}}</p>
 
 {!! link_to_route('tasks.edit', 'このタスクの編集', ['id' => $task->id]) !!}
 {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
