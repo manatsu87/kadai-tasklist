@@ -7,8 +7,9 @@
     @if (count($task)>0)
         <ul>
             @foreach ($task as $tasklist)
-            <li>{!! link_to_route('tasks.show', $task->id, ['id' => $task->id]) !!} : {{ $task->status }} > {{ $task->content }}</li>
+            <li>{!! link_to_route('tasks.show', $task->id, ['id' => $task->id]) !!} : {{ $task->status }} > {{ $content->content }}</li>
             @endforeach
         </ul>    
-    @endif    
+    @endif 
+    {!! link_to_route('tasks.create', '新規タスク追加') !!}
 @endsection
