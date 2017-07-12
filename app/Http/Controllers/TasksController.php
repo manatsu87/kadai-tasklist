@@ -33,7 +33,7 @@ class TasksController extends Controller
         $task = new Task;
         
         return view('tasks.create',[
-            'content' => $task,
+            'task' => $task,
             ]);
     }
 
@@ -69,7 +69,7 @@ class TasksController extends Controller
         $task = Task::find($id);
         
         return view('tasks.show',[
-            'content' => $task,]);
+            'task' => $task,]);
     }
 
     /**
@@ -83,7 +83,7 @@ class TasksController extends Controller
         $task = Task::find($id);
 
         return view('tasks.edit', [
-            'content' => $task,
+            'task' => $task,
         ]);
     }
 

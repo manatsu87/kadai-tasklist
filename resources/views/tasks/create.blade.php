@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- ここにページ毎のコンテンツを書く -->
-        <h1>メッセージ新規作成ページ</h1>
+        <h1>タスク新規追加ページ</h1>
         
         
  <div class="row">
@@ -14,7 +14,7 @@
         
         <div class="form-group">    
             {!! Form::label('task','タスク:')!!}
-            {!! Form::text('task') !!}
+            {!! Form::text('content') !!}
         </div>
         
         <div class = "form-group">
